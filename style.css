@@ -1,0 +1,450 @@
+*{
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Gotham Pro Black';
+  font-style: normal;
+  font-weight: 400;
+  src: url("..fonts/ofont.ru_Gotham\ Pro.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 400, 700;
+  src: url("//fonts/centurygothic.ttf") format("ttf"),
+      url("/fonts/centurygothic_bold.ttf") format("ttf");
+}
+
+body{
+  min-height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 100%;
+}
+
+main{
+  background-color: #6821AD;
+  background-image: url("image/background.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  width: 85vw;
+  top: 60px;
+  right: 50px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+
+.logo-image{
+  width: 300px;
+}
+
+section{
+  position: relative;
+  padding: 0 5vw;
+  height: 100vh;
+}
+
+.main-page{
+  background-image: url("image/university.png"), url("image/background-logo.png");
+  background-size: 50%, 35%;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.main-title{
+  font-size: calc((100vw - 320px)/(1920 - 320) * (95 - 28) + 28px);
+  max-width: 835px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #FEF3AC;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Gotham Pro Black", sans-serif;
+}
+
+.main-text{
+  font-size: calc((100vw - 320px)/(1920 - 320) * (32 - 15) + 15px);
+  line-height: 1.2;
+  max-width: 510px;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.main-item{
+  min-height: auto;
+  width: fit-content;
+  display: flex;
+  margin-top: 3rem;
+  color: white;
+}
+
+.item-creating{
+  width: 19rem;
+  padding-right: 5px;
+  border-right: 3px solid white;
+}
+
+.item-title{
+  font-size: calc((100vw - 320px)/(1920 - 320) * (20 - 15) + 15px);
+  font-family: "Gotham Pro Black", sans-serif;
+  color: #FEF3AC;
+  margin: 0;
+  max-width: 200px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.item-text{
+  font-family: 'Century Gothic', sans-serif;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (20 - 10) + 10px);
+}
+
+.item-task{
+  margin-left: 20px;
+  max-width: 30rem;
+}
+
+
+
+
+.preselection{
+  margin: 0 5vw;
+}
+
+.selection-title{
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #FEF3AC;
+  font-family: 'Gotham Pro Black', sans-serif;
+  font-weight: 900;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (48 - 20) + 20px);
+  letter-spacing: 1px;
+}
+
+.selection-item-text{
+  font-family: 'Gotham Pro Black', sans-serif;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (26 - 10) + 10px);
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 900;
+}
+
+.selection-item{
+  min-height: 70%;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #F2F1F9;
+  border: 1px solid #F2F1F9;
+  border-radius: 100px/80px;
+}
+
+.icon-image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.warning{
+  line-height: 1.5;
+  display: inline-flex;
+  width: fit-content;
+}
+
+.warning p{
+  vertical-align: 50%;
+  margin: 0 10px;
+}
+
+.warning-image{
+  margin: 0;
+  max-width: auto;
+}
+
+.data{
+  max-height: 75px;
+  margin-left: 25px;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (26 - 10) + 10px);
+  border-left: 3px solid black;
+  padding-left: 25px;
+  line-height: 1.5;
+  font-family: 'Gotham Pro Black', sans-serif;
+  color: black;
+  font-weight: 900;
+}
+
+.selection-inner-first, .selection-inner{
+  justify-content: flex-start;
+  display: flex;
+}
+
+.last{
+  display: grid;
+  grid-template-columns: repeat(3, 0.7fr);
+  justify-content: space-between;
+}
+
+.selection-inner{
+    padding: 25px 20px 0px 40px;
+}
+
+.selection-inner-first{
+  display: grid;
+  grid-template-columns: repeat(2, 0.7fr);
+  justify-content: space-between;
+}
+
+.result{
+  line-height: 1.5;
+  max-width: 70%;
+}
+
+.result-last{
+  max-width: auto;  
+}
+
+.selection-inner-text{
+  color: black;
+  font-family: 'Gotham Pro Black', sans-serif;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (26 - 10) + 10px);
+  text-align: left;
+  font-weight: 900;
+}
+
+.selection-inner-item{
+  margin-left: 20px;
+}
+
+.selection-inner-title{
+  font-family: 'Gotham Pro Black', sans-serif;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (30 - 15) + 15px);
+  text-align: left;
+  font-weight: 900;
+  margin-top: 0;
+  color: #6721AD;
+}
+
+.selection-inner-list{
+  line-height: 1.5;
+}
+
+.image-circle{
+  border: 1px solid transparent;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 12%;
+  bottom: 9vh;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.captain{
+  background: url("image/major.png") center top no-repeat;
+}
+
+.organization{
+  background: url("image/man-normal.jpg") center top no-repeat;
+}
+
+.solder{
+  background: url("image/man-solder.jpg") center top no-repeat;
+}
+
+.selection-item-footer{
+  display: flex;
+  width: fit-content;
+}
+
+.selection-item-footer p{
+  margin-left: 25px;
+  font-size: 24px;
+  border-left: 3px solid white;
+  padding-left: 25px;
+  min-width: 15rem;
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+.selection-inner ol{
+  padding-left: 15px;
+}
+
+.footer-image{
+  height: 70px;
+}
+
+@media (max-width: 1800px){
+
+  
+  .preselection{
+    margin: 0;
+  }
+
+  .captain{
+    background-size: 350px!important;
+  }
+
+  .image-circle{
+    width: 250px;
+    height: 250px;
+    background-size: 250px;
+  }
+
+  .selection-item-text{
+    margin-top: 15px;
+  }
+
+  .selection-inner{
+    padding: 5px 10px 0px 40px;
+  }
+
+}
+
+@media screen and (max-width: 1020px){
+
+
+
+  .main-page{
+    height: 65vh;
+    background-image: none;
+  }
+
+  .logo{
+    top: 10px;
+    margin-bottom: 15px;
+    float: left;
+    margin-left: 45px;
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .logo-image{
+    max-width: 200px;
+  }
+
+  .preselection{
+    height: 80vh;
+  }
+
+  .selection-item{
+    height: auto;
+    border-radius: 70px/50px;
+  }
+
+  .selection-inner{
+    padding: 25px 20px 0px 30px;
+  }
+
+  .warning img{
+    height: 30px;
+  }
+
+  .item-task{
+    margin-left: 10px;
+    max-width: auto;
+  }
+
+  .item-creating{
+    max-width: 10rem;
+  }
+  
+  .warning-image img{
+    margin-left: 15px;
+    width: 10px!important;
+    height: 30px;
+  }
+
+  .icon-image img{
+    width: 35px;
+  }
+
+  .image-circle{
+    display: none;
+  }
+
+  .selection-item-footer{
+    display: none;
+  }
+
+  .selection-inner-first, .last{
+    display: inline;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .nes-docs{
+    position: relative;
+    width: 100%;
+  }
+
+  .selection-inner{
+    padding: 10px;
+  }
+
+  .selection-item-text{
+    max-width: 80%;
+    margin: 10px auto;
+  }
+
+  .selection-inner-item{
+    margin-left: 15px;
+  }
+}
+
+@media (max-height: 600px){
+  .item-task{
+    max-width: 25rem;
+  }
+  .item-creating{
+    width: 12rem;
+  }
+
+  .captain{
+    background-size: 200px!important;
+  }
+
+  .image-circle{
+    width: 150px;
+    height: 150px;
+    bottom: 2vh;
+    background-size: 150px;
+  }
+
+  .icon-image img {
+    width: 45px;
+  }
+
+  .warning-image img{
+    margin-left: 15px;
+    width: 10px!important;
+    height: 30px;
+  }
+
+  .selection-title{
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 280px){
+  .icon-image img{
+    width: 30px;
+  }
+
+  .preselection{
+    height: 100vh;
+  }
+}
